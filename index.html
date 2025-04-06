@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Entreprise Bâtiment TCE</title>
+  <link rel="stylesheet" href="future.css" />
+</head>
+<body>
+  <header>
+    <h1>Entreprise Bâtiment TCE</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Votre expert tout corps d'état</h2>
+    <p>Maçonnerie, électricité, plomberie, carrelage, rénovation et plus encore.</p>
+    <button onclick="scrollToContact()">Demander un devis</button>
+  </section>
+
+  <section id="services">
+    <h2>Nos Services</h2>
+    <div class="services-grid">
+      <div class="card">
+        <h3>Maçonnerie</h3>
+        <p>Construction de murs, fondations, extensions, etc.</p>
+      </div>
+      <div class="card">
+        <h3>Électricité</h3>
+        <p>Installations complètes, mises aux normes, dépannage.</p>
+      </div>
+      <div class="card">
+        <h3>Plomberie</h3>
+        <p>Réseaux d’eau, salles de bain, chauffe-eau.</p>
+      </div>
+      <div class="card">
+        <h3>Rénovation</h3>
+        <p>Rénovation intérieure/extérieure clé en main.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations">
+    <h2>Nos Réalisations</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 1" />
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 2" />
+      <img src="https://via.placeholder.com/300x200" alt="Chantier 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Nom" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit">
+        <div> <a href="mailto:idris.mekidiche@etu.univ-amu.fr"></a> Envoyer</div>
+      </button>
+    </form>
+    <p class="success-message" id="successMsg">Merci pour votre message !</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Entreprise Bâtiment TCE. Tous droits réservés.</p>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
